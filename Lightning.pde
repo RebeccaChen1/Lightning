@@ -13,9 +13,9 @@ void draw()
 {
   background(0);
   clouds();
+  stroke((int)(random(255)),(int)(random(255)),(int)(random(255)));
   while(endY<300)
   {
-    stroke((int)(random(255)),(int)(random(255)),(int)(random(255)));
     endX = startX+(int)(random(-9,9));
     endY = startY+(int)(random(0,9));
     line(startX,startY,endX,endY);
